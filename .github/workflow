@@ -1,0 +1,13 @@
+on:
+  schedule:
+    - cron: '*/30 * * * *'
+
+jobs:
+  keep-codespace-active:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Keep Codespace Alive
+        uses: github/codespace-keeper-action@v1
+        with:
+          github-token: ${{ secrets.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 }}
+          codespace-name: ${{friendly-winner-pjppq9vvgqp7f97gx.github.dev/}}
